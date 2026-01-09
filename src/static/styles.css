@@ -88,13 +88,47 @@ section h3 {
 }
 
 .participants-list {
-  margin-left: 20px;
+  margin-left: 0;
   font-size: 14px;
   color: #555;
+  list-style: none;
 }
 
 .participants-list li {
-  margin-bottom: 4px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.participants-list li:hover {
+  background-color: #efefef;
+}
+
+.participant-name {
+  flex: 1;
+}
+
+.delete-btn {
+  background-color: transparent;
+  color: #d32f2f;
+  border: 1px solid #d32f2f;
+  padding: 4px 8px;
+  font-size: 14px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.delete-btn:hover {
+  background-color: #d32f2f;
+  color: white;
 }
 
 .participants-list em {
@@ -136,7 +170,8 @@ button:hover {
 }
 
 .message {
-  margin-top: 20px;
+  margin-top: 30px;
+  margin-bottom: 10px;
   padding: 10px;
   border-radius: 4px;
 }
